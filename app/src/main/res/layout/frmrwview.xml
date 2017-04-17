@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <include layout = "@layout/header"/>
+    
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:id="@+id/pnlScroll" 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:scrollbars="none"
+    		android:layout_below="@+id/pnlHeader">
+    		
+    		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+   		 	android:layout_height="fill_parent"
+    		>
+    			<TableLayout
+  					xmlns:android="http://schemas.android.com/apk/res/android"
+  					android:layout_width="fill_parent"
+  		 			android:layout_height="wrap_content"
+    				android:layout_weight="0">
+    			
+    				<TableRow android:id="@+id/TableRow00" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:id="@+id/lbl_TableRow00_blank1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:text=" "
+						>
+						</TextView>
+						
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRow01" 
+			 			android:layout_height="0dip"
+	    				android:layout_weight="0">
+						<ImageView android:id="@+id/img_rune1" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content">
+						</ImageView>
+						<ImageView android:id="@+id/img_rune2" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content">
+						</ImageView>
+						<ImageView android:id="@+id/img_rune3" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content">
+						</ImageView>
+						<ImageView android:id="@+id/img_rune4" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content">
+						</ImageView>
+						<ImageView android:id="@+id/img_rune5" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content">
+						</ImageView>
+						<ImageView android:id="@+id/img_rune6" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content">
+						</ImageView>
+					</TableRow>
+					<TableRow android:id="@+id/TableRow02" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:id="@+id/lbl_rune_name"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:textColor="@color/gold"
+    						android:textSize="15sp"
+						>
+						</TextView>
+						<TextView
+							android:id="@+id/lbl_rune_type"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:textColor="@color/gold"
+						>
+						</TextView>
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRow03" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:id="@+id/lbl_rune_word"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:textColor="@color/gold"
+						>
+						</TextView>
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRow04" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:id="@+id/lbl_TableRow04_blank1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:text=" "
+						>
+						</TextView>
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRow05" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:id="@+id/lbl_rune_comment1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:textColor="@color/blue"
+						>
+						</TextView>
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRow06" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:id="@+id/lbl_TableRow06_blank1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:text=" "
+						>
+						</TextView>
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRow08" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:id="@+id/lbl_rune_comment2"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:textColor="@color/white"
+						>
+						</TextView>
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRow09" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:id="@+id/lbl_TableRow09_blank1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:text=" "
+						>
+						</TextView>
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRow10" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:id="@+id/lbl_TableRow10_blank1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:text="单个符文属性"
+    						android:textColor="@color/grey"
+						>
+						</TextView>
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRowSingle1" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<ImageView android:id="@+id/img_rune_single1" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content">
+						</ImageView>
+    					<TextView
+							android:id="@+id/lbl_rune_single1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:text=""
+    						android:textColor="@color/grey"
+						>
+						</TextView>
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRowSingle2" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<ImageView android:id="@+id/img_rune_single2" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content">
+						</ImageView>
+    					<TextView
+							android:id="@+id/lbl_rune_single2"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:text=""
+    						android:textColor="@color/grey"
+						>
+						</TextView>
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRowSingle3" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<ImageView android:id="@+id/img_rune_single3" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content">
+						</ImageView>
+    					<TextView
+							android:id="@+id/lbl_rune_single3"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:text=""
+    						android:textColor="@color/grey"
+						>
+						</TextView>
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRowSingle4" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<ImageView android:id="@+id/img_rune_single4" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content">
+						</ImageView>
+    					<TextView
+							android:id="@+id/lbl_rune_single4"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:text=""
+    						android:textColor="@color/grey"
+						>
+						</TextView>
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRowSingle5" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<ImageView android:id="@+id/img_rune_single5" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content">
+						</ImageView>
+    					<TextView
+							android:id="@+id/lbl_rune_single5"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:text=""
+    						android:textColor="@color/grey"
+						>
+						</TextView>
+    				</TableRow>
+    				<TableRow android:id="@+id/TableRowSingle6" 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<ImageView android:id="@+id/img_rune_single6" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content">
+						</ImageView>
+    					<TextView
+							android:id="@+id/lbl_rune_single6"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+    						android:layout_weight="1"
+    						android:text=""
+    						android:textColor="@color/grey"
+						>
+						</TextView>
+    				</TableRow>
+    			</TableLayout>
+
+    		</LinearLayout>
+    </ScrollView>
+    
+</RelativeLayout>

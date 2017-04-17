@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Actually, Header is footer, Footer is header -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <include layout = "@layout/header"/>
+    <include layout = "@layout/footer"/>
+    
+		<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/pnlScroll" 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:scrollbars="none"
+    		android:layout_above="@+id/pnlFooter" 
+    		android:layout_below="@+id/pnlHeader">
+    
+    		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+   		 	android:layout_height="fill_parent"
+    		>
+
+    		<TableLayout
+  			xmlns:android="http://schemas.android.com/apk/res/android"
+  			android:layout_width="fill_parent"
+  		 	android:layout_height="wrap_content"
+    		android:layout_weight="0">
+
+    			<TableRow android:id="@+id/TableRow00" 
+		 		android:layout_height="0dip"
+    			android:layout_weight="0">
+    				<TextView
+						android:id="@+id/lbl_gold_blank2"
+						android:layout_height="wrap_content"
+						android:layout_width="0dip"
+    					android:layout_weight="1"
+    					android:text=" "
+					>
+					</TextView>
+    			</TableRow>
+    		
+	    		<TableRow android:id="@+id/TableRow01" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+					<ImageView android:id="@+id/img_gold_item" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content">
+					</ImageView>
+					<TextView
+							android:id="@+id/lbl_gold_name"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="2"
+	    					android:textColor="@color/gold"
+	    					android:textSize="15sp"
+						  >
+					</TextView>
+				</TableRow>
+	    		<TableRow android:id="@+id/TableRow02" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_type"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="2"
+					>
+					</TextView>
+	    			<TextView
+							android:id="@+id/lbl_gold_cls"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:textColor="@color/gold"
+					>
+					</TextView>
+	    		</TableRow>
+	    		<TableRow android:id="@+id/TableRow10" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_blank10"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=" "
+					>
+					</TextView>
+	    		</TableRow>
+	    		<TableRow android:id="@+id/TableRow03" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_comment1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="2"
+					>
+					</TextView>
+	    		</TableRow>
+	    		<TableRow android:id="@+id/TableRow04" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_comment2"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="2"
+	    					android:textColor="@color/blue"
+					>
+					</TextView>
+	    		</TableRow>
+	    		<TableRow android:id="@+id/TableRow04Green" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_green_setComment"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="2"
+	    					android:textColor="@color/green"
+					>
+					</TextView>
+	    		</TableRow>
+	    		<TableRow android:id="@+id/TableRow05" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_blank"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=" "
+					>
+					</TextView>
+	    		</TableRow>
+	    		<TableRow android:id="@+id/TableRow06" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<ImageView android:id="@+id/img_gold_monster" 
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content"
+					>
+					</ImageView>
+					<TextView
+							android:id="@+id/lbl_gold_monster"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="2"
+	    					android:text=""
+	    					android:textColor="@color/gold"
+					>
+					</TextView>
+	    		</TableRow>
+	    		
+	    		<TableRow android:id="@+id/TableRowMonsterHeader" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_monster_header0"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="2"
+	    					android:text=""
+	    					android:textColor="@color/gold"
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_header1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text="普通"
+							android:textColor="@color/gold"
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_header2"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text="噩梦"
+							android:textColor="@color/gold"
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_header3"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text="地狱"
+							android:textColor="@color/gold"
+					>
+					</TextView>
+	    		</TableRow>
+	    		
+	    		<TableRow android:id="@+id/TableRowMephisto" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_monster_m0"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="2"
+	    					android:text="Mephisto"
+	    					android:textColor="@color/gold"
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_m1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_m2"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_m3"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+	    		</TableRow>
+	    		
+	    		<TableRow android:id="@+id/TableRowDiablo" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_monster_d0"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="2"
+	    					android:text="Diablo"
+	    					android:textColor="@color/gold"
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_d1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_d2"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_d3"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+	    		</TableRow>
+	    		
+	    		<TableRow android:id="@+id/TableRowPindleskin" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_monster_p0"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="2"
+	    					android:text="Pindleskin"
+	    					android:textColor="@color/gold"
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_p1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_p2"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_p3"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+	    		</TableRow>
+	    		
+	    		<TableRow android:id="@+id/TableRowLister" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_monster_l0"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="2"
+	    					android:text="Lister"
+	    					android:textColor="@color/gold"
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_l1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_l2"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_l3"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+	    		</TableRow>
+	    		
+	    		<TableRow android:id="@+id/TableRowBaal" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_monster_b0"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="2"
+	    					android:text="Baal"
+	    					android:textColor="@color/gold"
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_b1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_b2"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_b3"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+	    		</TableRow>
+	    		
+	    		<TableRow android:id="@+id/TableRowHellBovine" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_monster_h0"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="2"
+	    					android:text="HellBovine"
+	    					android:textColor="@color/gold"
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_h1"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_h2"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+					<TextView
+							android:id="@+id/lbl_gold_monster_h3"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+					>
+					</TextView>
+	    		</TableRow>
+	    		<TableRow android:id="@+id/TableRow08" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_blank3"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=" "
+					>
+					</TextView>
+	    		</TableRow>
+				<TableRow android:id="@+id/TableRow08Green" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_green_comment"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=""
+	    					android:textColor="@color/gold"
+					>
+					</TextView>
+	    		</TableRow>
+				<TableRow android:id="@+id/TableRow10" 
+			 	android:layout_height="0dip"
+	    		android:layout_weight="0">
+	    			<TextView
+							android:id="@+id/lbl_gold_blank4"
+							android:layout_height="wrap_content"
+							android:layout_width="0dip"
+	    					android:layout_weight="1"
+	    					android:text=" "
+					>
+					</TextView>
+	    		</TableRow>
+    	</TableLayout>
+    </LinearLayout>
+ </ScrollView>
+
+</RelativeLayout>

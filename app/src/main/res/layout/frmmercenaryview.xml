@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <include layout = "@layout/header"/>
+    
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:id="@+id/pnlScroll" 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:scrollbars="none"
+    		android:layout_below="@+id/pnlHeader">
+    
+    		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    		android:orientation="vertical"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    	>
+	    		<TextView
+	    			android:id="@+id/txtBlank1"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = " "
+		    		android:textSize="16sp"
+				/>
+				<TextView
+					android:id="@+id/txtName"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:textColor="@color/gold"
+		    		android:textSize="16sp"
+		    		android:layout_below="@id/txtBlank1"
+				/>
+				<TextView
+					android:id="@+id/txtBlank2"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = " "
+		    		android:textSize="16sp"
+		    		android:layout_below="@id/txtName"
+				/>
+				<ImageView android:id="@+id/imgMercenary" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_below="@id/txtBlank2">
+				</ImageView>
+				<TextView
+					android:id="@+id/txtBlank3"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = " "
+		    		android:textSize="16sp"
+		    		android:layout_below="@id/imgMercenary"
+				/>
+				<TextView
+					android:id="@+id/txtTypeTitle"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = "介绍"
+		    		android:textSize="16sp"
+		    		android:textColor="@color/orange2"
+		    		android:layout_below="@id/txtBlank3"
+				/>
+				<TextView
+					android:id="@+id/txtType"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:textColor="@color/grey"
+		    		android:textSize="14sp"
+		    		android:layout_below="@id/txtTypeTitle"
+				/>
+				<TextView
+					android:id="@+id/txtBlank4"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = " "
+		    		android:textSize="16sp"
+		    		android:layout_below="@id/txtType"
+				/>
+				<TextView
+					android:id="@+id/txtUpPointsTitle"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = "升级加点"
+		    		android:textSize="16sp"
+		    		android:textColor="@color/orange2"
+		    		android:layout_below="@id/txtBlank4"
+				/>
+				<TableLayout
+					android:id="@+id/tblUpPoints"
+  					xmlns:android="http://schemas.android.com/apk/res/android"
+  					android:layout_width="fill_parent"
+  		 			android:layout_height="wrap_content"
+    				android:layout_weight="0"
+    				android:layout_below="@id/txtUpPointsTitle"
+    			>
+    				<TableRow 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+		    				android:text = "属性"
+		    				android:textSize="14sp"
+		    				android:textColor="@color/gold"
+		    				android:layout_weight="1"
+						/>
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+		    				android:text = "加值"
+		    				android:textSize="14sp"
+		    				android:textColor="@color/gold"
+		    				android:layout_weight="1"
+						/>
+    				</TableRow>
+    				<TableRow 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+		    				android:text = "力量"
+		    				android:textSize="14sp"
+		    				android:textColor="@color/yellow"
+		    				android:layout_weight="1"
+						/>
+						<TextView
+							android:id="@+id/txtStrength"
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+		    				android:textSize="14sp"
+		    				android:textColor="@color/yellow"
+		    				android:layout_weight="1"
+						/>
+    				</TableRow>
+    				<TableRow 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+		    				android:text = "敏捷"
+		    				android:textSize="14sp"
+		    				android:textColor="@color/green"
+		    				android:layout_weight="1"
+						/>
+						<TextView
+							android:id="@+id/txtDexity"
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+		    				android:textSize="14sp"
+		    				android:textColor="@color/green"
+		    				android:layout_weight="1"
+						/>
+    				</TableRow>
+    				<TableRow 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+		    				android:text = "防御"
+		    				android:textSize="14sp"
+		    				android:textColor="@color/white"
+		    				android:layout_weight="1"
+						/>
+						<TextView
+							android:id="@+id/txtDefence"
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+		    				android:textSize="14sp"
+		    				android:textColor="@color/white"
+		    				android:layout_weight="1"
+						/>
+    				</TableRow>
+    				<TableRow 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+		    				android:text = "生命"
+		    				android:textSize="14sp"
+		    				android:textColor="@color/red"
+		    				android:layout_weight="1"
+						/>
+						<TextView
+							android:id="@+id/txtLife"
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+		    				android:textSize="14sp"
+		    				android:textColor="@color/red"
+		    				android:layout_weight="1"
+						/>
+    				</TableRow>
+    				<TableRow 
+		 				android:layout_height="0dip"
+    					android:layout_weight="0">
+    					<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+		    				android:text = "四防"
+		    				android:textSize="14sp"
+		    				android:textColor="@color/blue"
+		    				android:layout_weight="1"
+						/>
+						<TextView
+							android:id="@+id/txtResistance"
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+		    				android:textSize="14sp"
+		    				android:textColor="@color/blue"
+		    				android:layout_weight="1"
+						/>
+    				</TableRow>
+    			</TableLayout>
+    			<TextView
+					android:id="@+id/txtBlank5"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = " "
+		    		android:textSize="16sp"
+		    		android:layout_below="@id/tblUpPoints"
+				/>
+				<TextView
+					android:id="@+id/txtItemTitle"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = "可装备物品"
+		    		android:textSize="16sp"
+		    		android:textColor="@color/orange2"
+		    		android:layout_below="@id/txtBlank5"
+				/>
+				<ImageView android:id="@+id/imgItem1" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_below="@id/txtItemTitle">
+				</ImageView>
+				<ImageView android:id="@+id/imgItem2" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_below="@id/txtItemTitle"
+					android:layout_toRightOf="@id/imgItem1">
+				</ImageView>
+				<ImageView android:id="@+id/imgItem3" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_below="@id/txtItemTitle"
+					android:layout_toRightOf="@id/imgItem2">
+				</ImageView>
+				<ImageView android:id="@+id/imgItem4" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_below="@id/txtItemTitle"
+					android:layout_toRightOf="@id/imgItem3">
+				</ImageView>
+				<ImageView android:id="@+id/imgItem5" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_below="@id/txtItemTitle"
+					android:layout_toRightOf="@id/imgItem4">
+				</ImageView>
+				<TextView
+					android:id="@+id/txtBlank6"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = " "
+		    		android:textSize="16sp"
+		    		android:layout_below="@id/imgItem1"
+				/>
+				<TextView
+					android:id="@+id/txtCommentTitle"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = "备注"
+		    		android:textSize="16sp"
+		    		android:textColor="@color/orange2"
+		    		android:layout_below="@id/txtBlank6"
+				/>
+				<TextView
+					android:id="@+id/txtComment"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:textColor="@color/grey"
+		    		android:textSize="14sp"
+		    		android:layout_below="@id/txtCommentTitle"
+				/>
+				<TextView
+					android:id="@+id/txtBlank7"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = " "
+		    		android:textSize="16sp"
+		    		android:layout_below="@id/txtComment"
+				/>
+				<TextView
+					android:id="@+id/txtClsTitle"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = "技能"
+		    		android:textSize="16sp"
+		    		android:textColor="@color/orange2"
+		    		android:layout_below="@id/txtBlank7"
+				/>
+				<TextView
+					android:id="@+id/txtCls"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:textColor="@color/grey"
+		    		android:textSize="14sp"
+		    		android:layout_below="@id/txtClsTitle"
+				/>
+				<TextView
+					android:id="@+id/txtBlank8"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = " "
+		    		android:textSize="16sp"
+		    		android:layout_below="@id/txtCls"
+				/>
+				<TextView
+					android:id="@+id/txtSkillBarTitle"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = "技能说明"
+		    		android:textSize="16sp"
+		    		android:textColor="@color/orange2"
+		    		android:layout_below="@id/txtBlank8"
+				/>
+				<cains.note.view.CtrlSkillBar
+					android:id="@+id/barSkill1"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_below="@id/txtSkillBarTitle"
+				/>
+				<cains.note.view.CtrlSkillBar
+					android:id="@+id/barSkill2"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_below="@id/barSkill1"
+				/>
+				<cains.note.view.CtrlSkillBar
+					android:id="@+id/barSkill3"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_below="@id/barSkill2"
+				/>
+				<cains.note.view.CtrlSkillBar
+					android:id="@+id/barSkill4"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_below="@id/barSkill3"
+				/>
+				<cains.note.view.CtrlSkillBar
+					android:id="@+id/barSkill5"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_below="@id/barSkill4"
+				/>
+				<cains.note.view.CtrlSkillBar
+					android:id="@+id/barSkill6"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_below="@id/barSkill5"
+				/>
+				<cains.note.view.CtrlSkillBar
+					android:id="@+id/barSkill7"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_below="@id/barSkill6"
+				/>
+				<TextView
+					android:id="@+id/txtBlank9"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+		    		android:text = " "
+		    		android:textSize="16sp"
+		    		android:layout_below="@id/barSkill7"
+				/>
+    		</RelativeLayout>
+    		
+    </ScrollView>
+    
+</RelativeLayout>

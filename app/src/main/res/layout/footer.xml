@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/pnlFooter" 
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom = "true"
+>
+   	<TableLayout
+ 		xmlns:android="http://schemas.android.com/apk/res/android"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+   		android:layout_weight="0">
+   		<TableRow android:id="@+id/TableRowFooter" 
+	 	android:layout_height="0dip"
+   		android:layout_weight="0">
+   			<ImageButton
+			android:id="@+id/btn_prepage"
+			android:layout_width="0dip"
+   			android:layout_weight="1"
+   			android:layout_height="wrap_content"
+			>
+			</ImageButton>
+			<ImageButton
+			android:id="@+id/btn_nextpage"
+			android:layout_width="0dip"
+   			android:layout_weight="1"
+   			android:layout_height="wrap_content"
+			>
+			</ImageButton>
+   		</TableRow>
+	</TableLayout>
+</LinearLayout>

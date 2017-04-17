@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <include layout = "@layout/header"/>
+	<include layout = "@layout/footer"/>
+    
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:id="@+id/pnlScroll"  
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:scrollbars="none"
+    		android:layout_above="@+id/pnlFooter" 
+    		android:layout_below="@+id/pnlHeader">
+    		
+	    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    	<TextView
+								android:id="@+id/lbl_pnlStory_blank1"
+								android:layout_height="wrap_content"
+								android:layout_width="wrap_content"
+								android:text=" "
+			/>
+			<TextView
+								android:id="@+id/lbl_story_name"
+								android:layout_height="wrap_content"
+								android:layout_width="fill_parent"
+		    					android:textColor="@color/white"
+		    					android:textSize="16sp"
+		    					android:layout_below="@id/lbl_pnlStory_blank1"
+			/>
+			<TextView
+								android:id="@+id/lbl_pnlStory_blank1_0"
+								android:layout_height="wrap_content"
+								android:layout_width="wrap_content"
+								android:text=" "
+								android:layout_below="@id/lbl_story_name"
+			/>
+			<ImageView          android:id="@+id/img_story" 
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:layout_below="@id/lbl_pnlStory_blank1_0"
+			/>
+			<TextView
+								android:id="@+id/lbl_pnlStory_blank1_1"
+								android:layout_height="wrap_content"
+								android:layout_width="fill_parent"
+								android:text=" "
+		    					android:layout_below="@id/img_story"
+			/>
+			<TextView
+								android:id="@+id/lbl_story_comment1"
+								android:layout_height="wrap_content"
+								android:layout_width="fill_parent"
+		    					android:textColor="@color/grey"
+		    					android:layout_below="@id/lbl_pnlStory_blank1_1"
+			/>
+			<TextView
+								android:id="@+id/lbl_pnlStory_blank2"
+								android:layout_height="wrap_content"
+								android:layout_width="wrap_content"
+								android:text=" "
+								android:layout_below="@id/lbl_story_comment1"
+			/>
+		
+	    </RelativeLayout>
+	    
+    </ScrollView>
+    
+</RelativeLayout>

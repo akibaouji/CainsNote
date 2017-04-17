@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <include layout = "@layout/header"/>
+    <include layout = "@layout/footer"/>
+    
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:id="@+id/pnlScroll" 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:scrollbars="none"
+    		android:layout_above="@+id/pnlFooter" 
+    		android:layout_below="@+id/pnlHeader">
+    		
+	    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    	<TextView
+								android:id="@+id/lbl_pnlTask_blank1"
+								android:layout_height="wrap_content"
+								android:layout_width="wrap_content"
+								android:text=" "
+			/>
+			<ImageView          android:id="@+id/img_task" 
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:layout_below="@id/lbl_pnlTask_blank1"
+			/>
+			<TextView
+								android:id="@+id/lbl_task_name"
+								android:layout_height="wrap_content"
+								android:layout_width="fill_parent"
+		    					android:textColor="@color/orange2"
+		    					android:textSize="16sp"
+		    					android:layout_toRightOf="@id/img_task"
+		    					android:layout_below="@id/lbl_pnlTask_blank1"
+			/>
+			<TextView
+								android:id="@+id/lbl_pnlTask_blank1_1"
+								android:layout_height="wrap_content"
+								android:layout_width="fill_parent"
+								android:text=" "
+		    					android:layout_below="@id/img_task"
+			/>
+			<TextView
+								android:id="@+id/lbl_task_type"
+								android:layout_height="wrap_content"
+								android:layout_width="fill_parent"
+		    					android:textColor="@color/white"
+		    					android:layout_below="@+id/lbl_pnlTask_blank1_1"
+			/>
+			<TextView
+								android:id="@+id/lbl_pnlTask_blank2"
+								android:layout_height="wrap_content"
+								android:layout_width="wrap_content"
+								android:text=" "
+								android:layout_below="@id/lbl_task_type"
+			/>
+			<TextView
+								android:id="@+id/lbl_task_cls_title"
+								android:layout_height="wrap_content"
+								android:layout_width="fill_parent"
+		    					android:textColor="@color/orange2"
+		    					android:text="任务给予"
+		    					android:textSize="15sp" 
+		    					android:layout_below="@id/lbl_pnlTask_blank2"
+			/>
+			<TextView
+								android:id="@+id/lbl_task_cls"
+								android:layout_height="wrap_content"
+								android:layout_width="fill_parent"
+		    					android:textColor="@color/grey"
+		    					android:layout_below="@id/lbl_task_cls_title"
+			/>
+			<TextView
+								android:id="@+id/lbl_pnlTask_blank3"
+								android:layout_height="wrap_content"
+								android:layout_width="wrap_content"
+								android:text=" "
+								android:layout_below="@id/lbl_task_cls"
+			/>
+			<TextView
+			
+								android:id="@+id/lbl_task_comment1_title"
+								android:layout_height="wrap_content"
+								android:layout_width="fill_parent"
+		    					android:textColor="@color/orange2"
+		    					android:text="任务目标"
+		    					android:textSize="15sp" 
+		    					android:layout_below="@id/lbl_pnlTask_blank3"
+			/>
+			<TextView
+								android:id="@+id/lbl_task_comment1"
+								android:layout_height="wrap_content"
+								android:layout_width="fill_parent"
+		    					android:textColor="@color/grey"
+		    					android:layout_below="@+id/lbl_task_comment1_title"
+			/>
+			<TextView
+								android:id="@+id/lbl_pnlTask_blank4"
+								android:layout_height="wrap_content"
+								android:layout_width="wrap_content"
+								android:text=" "
+								android:layout_below="@+id/lbl_task_comment1"
+			/>
+			<TextView
+								android:id="@+id/lbl_task_comment2_title"
+								android:layout_height="wrap_content"
+								android:layout_width="fill_parent"
+		    					android:textColor="@color/orange2"
+		    					android:text="任务奖励"
+		    					android:textSize="15sp" 
+		    					android:layout_below="@id/lbl_pnlTask_blank4"
+			/>
+			<TextView
+								android:id="@+id/lbl_task_comment2"
+								android:layout_height="wrap_content"
+								android:layout_width="fill_parent"
+		    					android:textColor="@color/green"
+		    					android:layout_below="@id/lbl_task_comment2_title"
+			/>
+			<TextView
+								android:id="@+id/lbl_pnlTask_blank5"
+								android:layout_height="wrap_content"
+								android:layout_width="wrap_content"
+								android:text=" "
+								android:layout_below="@id/lbl_task_comment2"
+			/>
+	    </RelativeLayout>
+	    
+    </ScrollView>
+    
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pnlAbout" 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/pnlScroll" 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:scrollbars="none">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pnlAbout2" 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+   <TextView
+					android:id="@+id/lbl_about_blank0"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text=" "
+					/>
+	<TableLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+    	android:layout_weight="0">
+		<TableRow android:id="@+id/TableRow0" 
+				  android:layout_height="0dip"
+	    		  android:layout_weight="0">
+	    		  <ImageView android:id="@+id/img_about_logo" 
+			      android:layout_width="wrap_content" 
+			      android:layout_height="wrap_content"/>
+				  <TextView
+					android:id="@+id/lbl_about_title"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textColor="@color/gold"
+					android:textSize="15sp"
+					/>
+		</TableRow>
+   </TableLayout>
+   <TextView
+			android:id="@+id/lbl_about_blank1"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text=" "
+			/>
+	<TextView
+			android:id="@+id/lbl_about_blank2"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text=" "
+			/>	
+    <TableLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+    	android:layout_weight="0">
+		<TableRow android:id="@+id/TableRow1" 
+				  android:layout_height="0dip"
+	    		  android:layout_weight="0">
+	    		  <ImageView android:id="@+id/img_about_developer" 
+			      android:layout_width="wrap_content" 
+			      android:layout_height="wrap_content"/>
+				  <TextView
+					android:id="@+id/lbl_about_developer"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textColor="@color/gold"
+					android:text="@string/app_about_developer"
+					/>
+		</TableRow>
+   </TableLayout>
+   <TextView
+			android:id="@+id/lbl_about_blank3"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text=" "
+			/>	
+   <TextView
+					android:id="@+id/lbl_about_item"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textColor="@color/green"
+					android:text="@string/app_about_item"
+					/>	
+   <TextView
+			android:id="@+id/lbl_about_blank4"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text=" "
+			/>	
+   <TextView
+					android:id="@+id/lbl_about_rune"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textColor="@color/white"
+					android:text="@string/app_about_rune"
+					/>	
+   <TextView
+					android:id="@+id/lbl_about_blank5"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text=" "
+					/>
+   <TextView
+					android:id="@+id/lbl_about_monster"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textColor="@color/grey"
+					android:text="@string/app_about_monster"
+					/>	
+   <TextView
+					android:id="@+id/lbl_about_blank6"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text=" "
+					/>
+	<TextView
+					android:id="@+id/lbl_about_story"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textColor="@color/blue"
+					android:text="@string/app_about_story"
+					/>	
+   <TextView
+					android:id="@+id/lbl_about_blank7"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text=" "
+					/>		
+   <TextView
+					android:id="@+id/lbl_about_declare"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textColor="@color/orange3"
+					android:text="@string/app_about_declare"
+					/>	
+   <TextView
+					android:id="@+id/lbl_about_blank8"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text=" "
+					/>
+   <TextView
+					android:id="@+id/lbl_about_blank9"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text=" "
+					/>
+   <ImageButton
+				android:id="@+id/btnAboutRtn"
+				android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_gravity="center_horizontal"
+	>
+	</ImageButton>
+	<TextView
+					android:id="@+id/lbl_about_blank_last"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text=" "
+					/>
+	</LinearLayout>
+	
+</ScrollView>
+
+</LinearLayout>

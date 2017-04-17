@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">凯恩的笔记本</string>
+    <string name="app_version">版本5.1</string>
+    <string name="app_about_developer"> 由Hade编写开发\r\n(Hade是一位忠实的德鲁伊粉丝)</string>
+    <string name="app_about_item">所有装备数据取自http://www.anhei3.net</string>
+    <string name="app_about_rune">符文之语评价来自krad7654321的精华贴</string>
+    <string name="app_about_monster">部分怪物及NPC数据,任务数据,魔法词缀和角色技能等数据取自凯恩之角</string>
+    <string name="app_about_story">所有背景故事取自http://game.techbang.com</string>
+    <string name="app_about_declare">本软件仅供暗黑2粉丝学习交流之用,请勿用于任何商业用途.所有数据仅供参考.</string>
+
+</resources>
