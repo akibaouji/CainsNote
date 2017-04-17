@@ -39,7 +39,7 @@
         <activity
             android:name=".FrmMonsterView"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
 
         <activity
             android:name=".FrmNpcView"
